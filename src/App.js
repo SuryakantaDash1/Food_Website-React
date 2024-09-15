@@ -1,25 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Header from './components/Header';
+import Body from './components/Body';
 
 
 
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img className='logo' src="https://images-platform.99static.com/A_Ax0GQuo_NHI0Y7XZHmFtGfBDY=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/126/126252/attachment_126252018" alt="" />
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
 
 const RestaurantCard = ({resData}) => {
     
@@ -865,28 +850,13 @@ const resList = [
         }
       }
 ]
-const Body = () => {
-    return(
-        <div className="body">
-            <div className="search">
-                Search
-            </div>
-            <div className="res-container">
-                {
-                    resList.map(rest => (
-                    <RestaurantCard key={rest.info.id} resData={rest}/>
-                    )
-                )}
-            </div>
-        </div>
-    )
-}
+
 
 const AppLayout = () => {
     return (
         <div className='app'>
             <Header/>
-            <Body/>
+            <Body/> 
         </div>
     )
 }
