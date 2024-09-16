@@ -2959,812 +2959,45 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
-const RestaurantCard = ({ resData })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-card",
-        style: {
-            backgroundColor: "#f0f0f0"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "res-logo",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/" + resData.info.cloudinaryImageId,
-                alt: "res-logo"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 12,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: resData.info.name
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 13,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.info.cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 14,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.info.costForTwo
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 15,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    resData.info.avgRating,
-                    " \u2B50"
-                ]
-            }, void 0, true, {
-                fileName: "src/App.js",
-                lineNumber: 16,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 11,
-        columnNumber: 9
-    }, undefined);
-};
-_c = RestaurantCard;
-const resList = [
-    {
-        "info": {
-            "id": "603014",
-            "name": "Paradise Biryani House",
-            "cloudinaryImageId": "h3nyqimdeodyjtoky4j7",
-            "locality": "Chandi Chhaka",
-            "areaName": "Biju Patnaik Colony",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
-                "Chinese",
-                "North Indian",
-                "Biryani",
-                "Indian"
-            ],
-            "avgRating": 2,
-            "parentId": "155089",
-            "avgRatingString": "2.0",
-            "totalRatingsString": "3",
-            "sla": {
-                "deliveryTime": 55,
-                "lastMileTravel": 6.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "55-60 mins",
-                "lastMileTravelString": "6.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-15 23:56:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textExtendedBadges": {},
-                    "textBased": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "60% OFF",
-                "subHeader": "UPTO \u20B9120"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=603014",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "476995",
-            "name": "The Cake Shop",
-            "cloudinaryImageId": "jjggnwwctffkcfczzxop",
-            "locality": "Jagannath Road",
-            "areaName": "Kalyani Nagar",
-            "costForTwo": "\u20B9200 for two",
-            "cuisines": [
-                "Indian",
-                "Pastas",
-                "Biryani"
-            ],
-            "avgRating": 4.3,
-            "veg": true,
-            "parentId": "206299",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "2",
-            "sla": {
-                "deliveryTime": 42,
-                "lastMileTravel": 2.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "40-45 mins",
-                "lastMileTravelString": "2.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-16 00:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "textExtendedBadges": {},
-                    "textBased": {},
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
-                                    "description": "pureveg"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=476995",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "775210",
-            "name": "Ruhi's Breakfast",
-            "cloudinaryImageId": "f470257d89530409fe832696ac5c8a52",
-            "locality": "Kesharpur Rd",
-            "areaName": "College Square",
-            "costForTwo": "\u20B9240 for two",
-            "cuisines": [
-                "Indian"
-            ],
-            "avgRating": 4.6,
-            "veg": true,
-            "parentId": "462314",
-            "avgRatingString": "4.6",
-            "totalRatingsString": "39",
-            "sla": {
-                "deliveryTime": 45,
-                "lastMileTravel": 4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "45-50 mins",
-                "lastMileTravelString": "4.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-15 12:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "textBased": {},
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
-                                    "description": "pureveg"
-                                }
-                            }
-                        ]
-                    },
-                    "textExtendedBadges": {}
-                }
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=775210",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "388995",
-            "name": "Angel Cake Shop",
-            "cloudinaryImageId": "h5jr5xawmu2qs1luxtse",
-            "locality": "Netaji Nagar",
-            "areaName": "Kalyani Nagar",
-            "costForTwo": "\u20B9200 for two",
-            "cuisines": [
-                "Desserts",
-                "Bakery"
-            ],
-            "avgRating": 3.8,
-            "veg": true,
-            "parentId": "240958",
-            "avgRatingString": "3.8",
-            "totalRatingsString": "50",
-            "sla": {
-                "deliveryTime": 49,
-                "lastMileTravel": 2.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "45-50 mins",
-                "lastMileTravelString": "2.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-16 02:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
-                                    "description": "pureveg"
-                                }
-                            }
-                        ]
-                    },
-                    "textExtendedBadges": {},
-                    "textBased": {}
-                }
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=388995",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "430302",
-            "name": "Hotel Ankit",
-            "cloudinaryImageId": "zhz7qu5sekqcdrgah3em",
-            "locality": "Meria Bazar",
-            "areaName": "Siba Bazaar",
-            "costForTwo": "\u20B9200 for two",
-            "cuisines": [
-                "Indian",
-                "Chinese",
-                "Fast Food"
-            ],
-            "parentId": "98008",
-            "avgRatingString": "--",
-            "sla": {
-                "deliveryTime": 46,
-                "lastMileTravel": 4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "45-50 mins",
-                "lastMileTravelString": "4.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-15 22:30:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "textExtendedBadges": {},
-                    "textBased": {},
-                    "imageBased": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "\u20B9125 OFF",
-                "subHeader": "ABOVE \u20B9249",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=430302",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "311681",
-            "name": "(New Odia Dalma's) By Akhandalamani Hotel",
-            "cloudinaryImageId": "mxl1qbdlh2v9pjwu2g5u",
-            "locality": "Professors Colony",
-            "areaName": "Mangalabag",
-            "costForTwo": "\u20B9200 for two",
-            "cuisines": [
-                "North Indian",
-                "Chinese"
-            ],
-            "avgRating": 3.8,
-            "parentId": "22622",
-            "avgRatingString": "3.8",
-            "totalRatingsString": "2.3K+",
-            "sla": {
-                "deliveryTime": 44,
-                "lastMileTravel": 3.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "40-45 mins",
-                "lastMileTravelString": "3.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-15 16:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "textBased": {},
-                    "imageBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B959"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=311681",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "528682",
-            "name": "Bijaya's Kitchen",
-            "cloudinaryImageId": "z3hrsc5btqry5sha2kab",
-            "locality": "Siba Bazar",
-            "areaName": "Siba Bazaar",
-            "costForTwo": "\u20B9150 for two",
-            "cuisines": [
-                "Chinese",
-                "Snacks",
-                "Indian"
-            ],
-            "parentId": "318547",
-            "avgRatingString": "--",
-            "sla": {
-                "deliveryTime": 50,
-                "lastMileTravel": 3.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "45-50 mins",
-                "lastMileTravelString": "3.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-15 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textExtendedBadges": {},
-                    "textBased": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "35% OFF",
-                "subHeader": "UPTO \u20B9175",
-                "discountTag": "SAVE BIG"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=528682",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "810513",
-            "name": " Tasty Junction",
-            "cloudinaryImageId": "330f7d11d515aad8269ab4e729e339e4",
-            "locality": "Durga azar",
-            "areaName": "College Square",
-            "costForTwo": "\u20B9150 for two",
-            "cuisines": [
-                "Chinese",
-                "Desserts",
-                "Chaat",
-                "Street Food",
-                "Pizzas",
-                "Pastas",
-                "Home Food",
-                "Waffle",
-                "Fast Food",
-                "Burgers"
-            ],
-            "avgRating": 4.2,
-            "parentId": "202052",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "79",
-            "sla": {
-                "deliveryTime": 52,
-                "lastMileTravel": 4.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "50-55 mins",
-                "lastMileTravelString": "4.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-16 02:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "textBased": {},
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
-                                    "description": "pureveg"
-                                }
-                            }
-                        ]
-                    },
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "\u20B940 OFF",
-                "subHeader": "ABOVE \u20B9399",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=810513",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "603022",
-            "name": "Hotel Samrat",
-            "cloudinaryImageId": "juy1zafgkvgbsbbda1qp",
-            "locality": "Chandi Chowk",
-            "areaName": "Biju Patnaik Colony",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
-                "North Indian",
-                "Chinese",
-                "Pizzas",
-                "Fast Food",
-                "Snacks"
-            ],
-            "avgRating": 2,
-            "parentId": "101897",
-            "avgRatingString": "2.0",
-            "totalRatingsString": "10",
-            "sla": {
-                "deliveryTime": 55,
-                "lastMileTravel": 6,
-                "serviceability": "SERVICEABLE",
-                "slaString": "55-60 mins",
-                "lastMileTravelString": "6.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-09-15 23:59:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "textExtendedBadges": {},
-                    "textBased": {},
-                    "imageBased": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9250",
-                "discountTag": "SAVE BIG"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {},
-        "cta": {
-            "link": "swiggy://menu?restaurant_id=603022",
-            "text": "RESTAURANT_MENU",
-            "type": "DEEPLINK"
-        }
-    }
-];
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
-                children: "Search"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 855,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-container",
-                children: resList.map((rest)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resData: rest
-                    }, rest.info.id, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 861,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 858,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 854,
-        columnNumber: 9
-    }, undefined);
-};
-_c1 = Body;
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 872,
+                lineNumber: 10,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 873,
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 871,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
-_c2 = AppLayout;
+_c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 879,
+    lineNumber: 17,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2;
-$RefreshReg$(_c, "RestaurantCard");
-$RefreshReg$(_c1, "Body");
-$RefreshReg$(_c2, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"hsJbF"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Header":"hsJbF","./components/Body":"8yaV8"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -28185,6 +27418,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
@@ -28193,16 +27427,16 @@ const Header = ()=>{
                 className: "logo-container",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     className: "logo",
-                    src: "https://images-platform.99static.com/A_Ax0GQuo_NHI0Y7XZHmFtGfBDY=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/126/126252/attachment_126252018",
+                    src: (0, _constants.LOGO_URL),
                     alt: ""
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 6,
+                    lineNumber: 8,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 5,
+                lineNumber: 7,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28213,45 +27447,45 @@ const Header = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 10,
+                            lineNumber: 12,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 11,
+                            lineNumber: 13,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact Us"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 12,
+                            lineNumber: 14,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 13,
+                            lineNumber: 15,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 9,
+                    lineNumber: 11,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 8,
+                lineNumber: 10,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 4,
+        lineNumber: 6,
         columnNumber: 9
     }, undefined);
 };
@@ -28265,6 +27499,828 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"hB8jg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
+parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/";
+const LOGO_URL = "https://images-platform.99static.com/A_Ax0GQuo_NHI0Y7XZHmFtGfBDY=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/126/126252/attachment_126252018";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yaV8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _mockData = require("../utils/mockData");
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: (0, _mockData.resList).map((rest)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                        resData: rest
+                    }, rest.info.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 13,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Body.js",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/mockData":"iOpE9"}],"bMboU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ffb1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
+const RestaurantCard = ({ resData })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        style: {
+            backgroundColor: "#f0f0f0"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-logo",
+                src: (0, _constants.CDN_URL) + resData.info.cloudinaryImageId,
+                alt: "res-logo"
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: resData.info.name
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.info.cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.info.costForTwo
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    resData.info.avgRating,
+                    " \u2B50"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantCard.js",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"iOpE9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "resList", ()=>resList);
+const resList = [
+    {
+        "info": {
+            "id": "603014",
+            "name": "Paradise Biryani House",
+            "cloudinaryImageId": "h3nyqimdeodyjtoky4j7",
+            "locality": "Chandi Chhaka",
+            "areaName": "Biju Patnaik Colony",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Chinese",
+                "North Indian",
+                "Biryani",
+                "Indian"
+            ],
+            "avgRating": 2,
+            "parentId": "155089",
+            "avgRatingString": "2.0",
+            "totalRatingsString": "3",
+            "sla": {
+                "deliveryTime": 55,
+                "lastMileTravel": 6.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "55-60 mins",
+                "lastMileTravelString": "6.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-15 23:56:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO \u20B9120"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=603014",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "476995",
+            "name": "The Cake Shop",
+            "cloudinaryImageId": "jjggnwwctffkcfczzxop",
+            "locality": "Jagannath Road",
+            "areaName": "Kalyani Nagar",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Indian",
+                "Pastas",
+                "Biryani"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "parentId": "206299",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "2",
+            "sla": {
+                "deliveryTime": 42,
+                "lastMileTravel": 2.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-45 mins",
+                "lastMileTravelString": "2.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-16 00:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                    "description": "pureveg"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=476995",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "775210",
+            "name": "Ruhi's Breakfast",
+            "cloudinaryImageId": "f470257d89530409fe832696ac5c8a52",
+            "locality": "Kesharpur Rd",
+            "areaName": "College Square",
+            "costForTwo": "\u20B9240 for two",
+            "cuisines": [
+                "Indian"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "462314",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "39",
+            "sla": {
+                "deliveryTime": 45,
+                "lastMileTravel": 4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "45-50 mins",
+                "lastMileTravelString": "4.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-15 12:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                    "description": "pureveg"
+                                }
+                            }
+                        ]
+                    },
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=775210",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "388995",
+            "name": "Angel Cake Shop",
+            "cloudinaryImageId": "h5jr5xawmu2qs1luxtse",
+            "locality": "Netaji Nagar",
+            "areaName": "Kalyani Nagar",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Desserts",
+                "Bakery"
+            ],
+            "avgRating": 3.8,
+            "veg": true,
+            "parentId": "240958",
+            "avgRatingString": "3.8",
+            "totalRatingsString": "50",
+            "sla": {
+                "deliveryTime": 49,
+                "lastMileTravel": 2.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "45-50 mins",
+                "lastMileTravelString": "2.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-16 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                    "description": "pureveg"
+                                }
+                            }
+                        ]
+                    },
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=388995",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "430302",
+            "name": "Hotel Ankit",
+            "cloudinaryImageId": "zhz7qu5sekqcdrgah3em",
+            "locality": "Meria Bazar",
+            "areaName": "Siba Bazaar",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Indian",
+                "Chinese",
+                "Fast Food"
+            ],
+            "parentId": "98008",
+            "avgRatingString": "--",
+            "sla": {
+                "deliveryTime": 46,
+                "lastMileTravel": 4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "45-50 mins",
+                "lastMileTravelString": "4.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-15 22:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "\u20B9125 OFF",
+                "subHeader": "ABOVE \u20B9249",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=430302",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "311681",
+            "name": "(New Odia Dalma's) By Akhandalamani Hotel",
+            "cloudinaryImageId": "mxl1qbdlh2v9pjwu2g5u",
+            "locality": "Professors Colony",
+            "areaName": "Mangalabag",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "North Indian",
+                "Chinese"
+            ],
+            "avgRating": 3.8,
+            "parentId": "22622",
+            "avgRatingString": "3.8",
+            "totalRatingsString": "2.3K+",
+            "sla": {
+                "deliveryTime": 44,
+                "lastMileTravel": 3.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-45 mins",
+                "lastMileTravelString": "3.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-15 16:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B959"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=311681",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "528682",
+            "name": "Bijaya's Kitchen",
+            "cloudinaryImageId": "z3hrsc5btqry5sha2kab",
+            "locality": "Siba Bazar",
+            "areaName": "Siba Bazaar",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "Chinese",
+                "Snacks",
+                "Indian"
+            ],
+            "parentId": "318547",
+            "avgRatingString": "--",
+            "sla": {
+                "deliveryTime": 50,
+                "lastMileTravel": 3.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "45-50 mins",
+                "lastMileTravelString": "3.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-15 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "35% OFF",
+                "subHeader": "UPTO \u20B9175",
+                "discountTag": "SAVE BIG"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=528682",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "810513",
+            "name": " Tasty Junction",
+            "cloudinaryImageId": "330f7d11d515aad8269ab4e729e339e4",
+            "locality": "Durga azar",
+            "areaName": "College Square",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "Chinese",
+                "Desserts",
+                "Chaat",
+                "Street Food",
+                "Pizzas",
+                "Pastas",
+                "Home Food",
+                "Waffle",
+                "Fast Food",
+                "Burgers"
+            ],
+            "avgRating": 4.2,
+            "parentId": "202052",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "79",
+            "sla": {
+                "deliveryTime": 52,
+                "lastMileTravel": 4.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "50-55 mins",
+                "lastMileTravelString": "4.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-16 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                    "description": "pureveg"
+                                }
+                            }
+                        ]
+                    },
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "\u20B940 OFF",
+                "subHeader": "ABOVE \u20B9399",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=810513",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "603022",
+            "name": "Hotel Samrat",
+            "cloudinaryImageId": "juy1zafgkvgbsbbda1qp",
+            "locality": "Chandi Chowk",
+            "areaName": "Biju Patnaik Colony",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "North Indian",
+                "Chinese",
+                "Pizzas",
+                "Fast Food",
+                "Snacks"
+            ],
+            "avgRating": 2,
+            "parentId": "101897",
+            "avgRatingString": "2.0",
+            "totalRatingsString": "10",
+            "sla": {
+                "deliveryTime": 55,
+                "lastMileTravel": 6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "55-60 mins",
+                "lastMileTravelString": "6.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-09-15 23:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9250",
+                "discountTag": "SAVE BIG"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=603022",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
 
 //# sourceMappingURL=index.7271efb6.js.map

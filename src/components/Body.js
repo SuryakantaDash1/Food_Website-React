@@ -1,3 +1,6 @@
+import RestaurantCard from "./RestaurantCard";
+import { resList } from "../utils/mockData";
+
 const Body = () => {
     return(
         <div className="body">
