@@ -27520,39 +27520,55 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _mockData = require("../utils/mockData");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Body = ()=>{
+    _s();
+    const [restaurant, setRestaurant] = (0, _react.useState)((0, _mockData.resList));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
-                children: "Search"
+                className: "filter",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "filter-btn",
+                    onClick: ()=>{
+                        const filteredList = (0, _mockData.resList).filter((res)=>res.info.avgRating > 4);
+                        setRestaurant(filteredList);
+                    },
+                    children: "Top Rated Restaurants"
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 7,
+                lineNumber: 9,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: (0, _mockData.resList).map((rest)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                children: restaurant.map((rest)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                         resData: rest
                     }, rest.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 13,
+                        lineNumber: 21,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 10,
+                lineNumber: 18,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 6,
+        lineNumber: 8,
         columnNumber: 9
     }, undefined);
 };
+_s(Body, "Wij4vLd80Q1s1mIa+gzAoTGLMw4=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27563,7 +27579,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/mockData":"iOpE9"}],"bMboU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/mockData":"iOpE9","react":"21dqq"}],"bMboU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
