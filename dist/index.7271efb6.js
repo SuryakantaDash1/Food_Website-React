@@ -27552,7 +27552,6 @@ const Body = ()=>{
         const json = await data.json();
         const restaurantList = json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
         setListOfRestaurant(restaurantList);
-        setFilteredRestaurant(restaurantList);
     };
     return listOfRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
@@ -27605,7 +27604,7 @@ const Body = ()=>{
                         children: "Top Rated Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 17
                     }, undefined)
                 ]
@@ -27620,12 +27619,12 @@ const Body = ()=>{
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 51,
+                        lineNumber: 52,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 48,
+                lineNumber: 49,
                 columnNumber: 13
             }, undefined)
         ]

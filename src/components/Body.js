@@ -20,7 +20,7 @@ const Body = () => {
         const restaurantList = json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
         setListOfRestaurant(restaurantList);
-        setFilteredRestaurant(restaurantList);
+
     };
 
     
@@ -34,6 +34,7 @@ const Body = () => {
                         setFilteredRestaurant(filteredTest);
                     }}>Search</button>
                 </div>
+              
 
                 <button className="filter-btn" 
                 onClick={() => {
