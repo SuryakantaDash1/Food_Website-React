@@ -35141,112 +35141,78 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _user = require("./User");
-var _userDefault = parcelHelpers.interopDefault(_user);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _userClass = require("./UserClass");
 var _userClassDefault = parcelHelpers.interopDefault(_userClass);
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
-                name: "surya"
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 7,
-                columnNumber: 16
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
-                name: "Surya bhai"
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 8,
-                columnNumber: 16
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/About.js",
-        lineNumber: 6,
-        columnNumber: 9
-    }, undefined);
-};
-_c = About;
+class About extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        console.log("parent constructor");
+    }
+    componentDidMount() {
+        console.log("Parent componentdidmount");
+    }
+    render() {
+        console.log("parent render");
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
+                    name: "Surya"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 17,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
+                    name: "skd"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 18,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/About.js",
+            lineNumber: 16,
+            columnNumber: 13
+        }, this);
+    }
+}
+// import User from "./User";
+// import UserClass from "./UserClass";
+// import { Component } from "react";
+// class About extends Component {
+//     constructor(props) {
+//         super(props)
+//         console.log("constructor about");
+//     }
+//     componentDidMount() {
+//         console.log("about didmount")
+//     }
+//     render() {
+//         return (
+//             <div>
+//                 <UserClass name = "Surya" />
+//             </div>
+//         )
+//     }
+// }
+// const About = () => {
+//     return (
+//         <div>
+//                <UserClass name = "Surya bhai" />
+//         </div>
+//     )
+// }
 exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$5b98.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./User":"4iQHT","./UserClass":"Vp2Fx"}],"4iQHT":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9c32 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9c32.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
-const User = (props)=>{
-    _s();
-    const [count, setCount] = (0, _react.useState)(0);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "user-card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: [
-                    "count = ",
-                    count
-                ]
-            }, void 0, true, {
-                fileName: "src/components/User.js",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: props.name
-            }, void 0, false, {
-                fileName: "src/components/User.js",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Locality: Kendrapara"
-            }, void 0, false, {
-                fileName: "src/components/User.js",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Contact: @suryakd21"
-            }, void 0, false, {
-                fileName: "src/components/User.js",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/User.js",
-        lineNumber: 7,
-        columnNumber: 9
-    }, undefined);
-};
-_s(User, "oDgYfYHkD9Wkv4hrAPCkI/ev3YU=");
-_c = User;
-exports.default = User;
-var _c;
-$RefreshReg$(_c, "User");
-
-  $parcel$ReactRefreshHelpers$9c32.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"Vp2Fx":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","./UserClass":"Vp2Fx"}],"Vp2Fx":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$46df = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35261,43 +35227,66 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 class UserClass extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
+        this.state = {
+            count: 0
+        };
+        console.log(this.props.name + "child constructor");
+    }
+    componentDidMount() {
+        console.log(this.props.name + "child componentdid mount");
     }
     render() {
+        console.log(this.props.name + "child render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "user-card",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "count ="
-                }, void 0, false, {
+                    children: [
+                        "Name: ",
+                        this.props.name
+                    ]
+                }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 11,
-                    columnNumber: 13
+                    lineNumber: 22,
+                    columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: this.props.name
-                }, void 0, false, {
+                    children: [
+                        "Count: ",
+                        this.state.count
+                    ]
+                }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 12,
-                    columnNumber: 13
+                    lineNumber: 23,
+                    columnNumber: 17
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: "Locality: Kendrapara"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        this.setState({
+                            count: this.state.count + 1
+                        });
+                    },
+                    children: "Count"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 13,
-                    columnNumber: 13
+                    lineNumber: 24,
+                    columnNumber: 17
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: "Contact: @suryakd21"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        this.setState({
+                            count: this.state.count - 1
+                        });
+                    },
+                    children: "Count -"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 14,
-                    columnNumber: 13
+                    lineNumber: 29,
+                    columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
-            lineNumber: 10,
+            lineNumber: 21,
             columnNumber: 13
         }, this);
     }
@@ -35309,7 +35298,7 @@ exports.default = UserClass;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{}],"cgAOG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
