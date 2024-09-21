@@ -35228,12 +35228,20 @@ class UserClass extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
         this.state = {
-            count: 0
+            info: {
+                name: "dommy",
+                bio: "dummy"
+            }
         };
         console.log(this.props.name + "child constructor");
     }
-    componentDidMount() {
-        console.log(this.props.name + "child componentdid mount");
+    async componentDidMount() {
+        const data = await fetch("https://api.github.com/users/SuryakantaDash1");
+        const json = await data.json();
+        console.log(json);
+        this.setState({
+            info: json
+        });
     }
     render() {
         console.log(this.props.name + "child render");
@@ -35242,11 +35250,21 @@ class UserClass extends (0, _reactDefault.default).Component {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: [
                         "Name: ",
-                        this.props.name
+                        this.state.info.name
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 22,
+                    lineNumber: 30,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: [
+                        "Bio: ",
+                        this.state.info.bio
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 31,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -35256,7 +35274,7 @@ class UserClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 23,
+                    lineNumber: 32,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35268,7 +35286,7 @@ class UserClass extends (0, _reactDefault.default).Component {
                     children: "Count"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 24,
+                    lineNumber: 33,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35280,13 +35298,13 @@ class UserClass extends (0, _reactDefault.default).Component {
                     children: "Count -"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 29,
+                    lineNumber: 38,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
-            lineNumber: 21,
+            lineNumber: 29,
             columnNumber: 13
         }, this);
     }
