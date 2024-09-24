@@ -1,6 +1,7 @@
 import Shimmer from './Shimmer';
 import { useParams } from 'react-router-dom';
 import useRestaurantMenu from '../utils/useRestaurantMenu';
+import RestaurantCategory from './RestaurantCategory';
 
 const RestaurantMenu = () => {
     const {resId} = useParams();
@@ -15,29 +16,50 @@ const RestaurantMenu = () => {
     ?.find(menuCard => menuCard?.card?.card?.itemCards)
     ?.card?.card?.itemCards || [];
 
-console.log('Menu Items:', menuItems);
-console.log('Restaurant Info:', resInfo);
+    // console.log('Menu Items:', menuItems);
+    // console.log('Restaurant Info:', resInfo);
+
+    const categories = resInfo?.cards?.find(card => card?.groupedCard)
+    ?.groupedCard?.cardGroupMap?.REGULAR?.cards
+    ?.filter(categoryCard => categoryCard?.card?.card?.title)
+    ?.map(categoryCard => ({
+        title: categoryCard?.card?.card?.title,
+        itemCount: categoryCard?.card?.card?.itemCards?.length || 0
+    })) || [];
+
+    console.log(categories);
 
 
 
   return (
-    <div className="menu">
-        <h1>{name}</h1>
-        <h4>{cuisines?.join(', ')} - {costForTwo/100} for two</h4>
-        <h3></h3>
-        <h2>Menu</h2>
+    <div className="text-center">
+        <h1 className='font-bold my-6 text-xl'>{name}</h1>
+        <h4 className='font-bold text-lg'>{cuisines?.join(', ')} - {costForTwo/100} for two</h4>
+        {categories.map((category) =>
+             <RestaurantCategory data= {category}/>
+        )}
+    </div>
+  )
+}
+
+export default RestaurantMenu;
+
+
+
+
+
+
+
+
+
+ {/* <h2>Menu</h2>
         <ul>
                 {menuItems?.map((item) => (
                     <li key={item?.card?.info?.id}>
                         {item?.card?.info?.name} - ₹{item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice / 100}
                     </li>
                 ))}
-        </ul>
-    </div>
-  )
-}
-
-export default RestaurantMenu;
+        </ul> */}
 
 
 
