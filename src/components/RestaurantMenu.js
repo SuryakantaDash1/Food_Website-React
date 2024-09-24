@@ -6,14 +6,19 @@ const RestaurantMenu = () => {
     const {resId} = useParams();
     const resInfo = useRestaurantMenu(resId);
 
+    if (resInfo === null) return <Shimmer/> ;
+
     const { name, cuisines, costForTwo } = resInfo?.cards?.[2]?.card?.card?.info || {};
     
-    const menuItems = resInfo?.cards?.find(card => card?.groupedCard)?.groupedCard?.cardGroupMap?.REGULAR?.cards
-        ?.find(menuCard => menuCard?.card?.card?.itemCards)?.card?.card?.itemCards;
+    const menuItems = resInfo?.cards?.find(card => card?.groupedCard)
+    ?.groupedCard?.cardGroupMap?.REGULAR?.cards
+    ?.find(menuCard => menuCard?.card?.card?.itemCards)
+    ?.card?.card?.itemCards || [];
+
+console.log('Menu Items:', menuItems);
+console.log('Restaurant Info:', resInfo);
 
 
-
-if (resInfo === null) return <Shimmer/> ;
 
   return (
     <div className="menu">
