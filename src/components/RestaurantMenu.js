@@ -24,7 +24,8 @@ const RestaurantMenu = () => {
     ?.filter(categoryCard => categoryCard?.card?.card?.title)
     ?.map(categoryCard => ({
         title: categoryCard?.card?.card?.title,
-        itemCount: categoryCard?.card?.card?.itemCards?.length || 0
+        itemCount: categoryCard?.card?.card?.itemCards?.length || 0,
+        itemCards: categoryCard?.card?.card?.itemCards || [] 
     })) || [];
 
     console.log(categories);

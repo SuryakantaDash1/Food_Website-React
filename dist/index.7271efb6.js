@@ -35557,7 +35557,8 @@ const RestaurantMenu = ()=>{
     // console.log('Restaurant Info:', resInfo);
     const categories = resInfo?.cards?.find((card)=>card?.groupedCard)?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter((categoryCard)=>categoryCard?.card?.card?.title)?.map((categoryCard)=>({
             title: categoryCard?.card?.card?.title,
-            itemCount: categoryCard?.card?.card?.itemCards?.length || 0
+            itemCount: categoryCard?.card?.card?.itemCards?.length || 0,
+            itemCards: categoryCard?.card?.card?.itemCards || []
         })) || [];
     console.log(categories);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35568,7 +35569,7 @@ const RestaurantMenu = ()=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35581,20 +35582,20 @@ const RestaurantMenu = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 9
             }, undefined),
             categories.map((category)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {
                     data: category
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 14
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 5
     }, undefined);
 };
@@ -35664,7 +35665,6 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _itemList = require("./ItemList");
 var _itemListDefault = parcelHelpers.interopDefault(_itemList);
 const RestaurantCategory = ({ data })=>{
-    console.log("category Data:", data);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "w-6/12 bg-teal-50 shadow-lg p-4 mx-auto my-4 ",
@@ -35683,38 +35683,38 @@ const RestaurantCategory = ({ data })=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/components/RestaurantCategory.js",
-                            lineNumber: 12,
+                            lineNumber: 10,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             children: "arrow symbol"
                         }, void 0, false, {
                             fileName: "src/components/RestaurantCategory.js",
-                            lineNumber: 13,
+                            lineNumber: 11,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/RestaurantCategory.js",
-                    lineNumber: 11,
+                    lineNumber: 9,
                     columnNumber: 13
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
                     items: data.itemCards
                 }, void 0, false, {
                     fileName: "src/components/RestaurantCategory.js",
-                    lineNumber: 17,
+                    lineNumber: 15,
                     columnNumber: 14
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/RestaurantCategory.js",
-            lineNumber: 9,
+            lineNumber: 7,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/RestaurantCategory.js",
-        lineNumber: 8,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
@@ -35738,12 +35738,55 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const ItemList = ()=>{
+const ItemList = ({ items })=>{
+    console.log(items);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "ItemList"
+        children: items.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "p-2 m-2 border-b-2 border-gray-200 text-left",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "py-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: item.card.info.name
+                            }, void 0, false, {
+                                fileName: "src/components/ItemList.js",
+                                lineNumber: 10,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: [
+                                    "- \u20B9",
+                                    item.card.info.price / 100
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/ItemList.js",
+                                lineNumber: 11,
+                                columnNumber: 17
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/ItemList.js",
+                        lineNumber: 9,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "text-xs",
+                        children: item.card.info.description
+                    }, void 0, false, {
+                        fileName: "src/components/ItemList.js",
+                        lineNumber: 13,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, item.card.info.id, true, {
+                fileName: "src/components/ItemList.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, undefined))
     }, void 0, false, {
         fileName: "src/components/ItemList.js",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
