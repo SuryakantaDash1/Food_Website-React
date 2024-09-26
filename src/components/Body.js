@@ -22,7 +22,6 @@ const Body = () => {
     
             const json = await data.json();
     
-            // const restaurantList = json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
             const restaurantList = json?.data?.cards?.[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
     
             setListOfRestaurant(restaurantList);
@@ -31,6 +30,13 @@ const Body = () => {
             console.error("Error fetching data:", error);
         }
     };
+
+    
+    
+    
+    
+    
+    
 
 
     const onlineStatus = useOnlineStatus();
@@ -70,6 +76,8 @@ const Body = () => {
                     )
                 )}
             </div>
+           
+
         </div>
     )
 }
