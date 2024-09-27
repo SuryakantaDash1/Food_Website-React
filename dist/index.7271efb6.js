@@ -35586,7 +35586,7 @@ const RestaurantMenu = ()=>{
             }, undefined),
             categories.map((category)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {
                     data: category
-                }, void 0, false, {
+                }, category.title, false, {
                     fileName: "src/components/RestaurantMenu.js",
                     lineNumber: 40,
                     columnNumber: 14
@@ -35661,15 +35661,23 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _itemList = require("./ItemList");
 var _itemListDefault = parcelHelpers.interopDefault(_itemList);
+var _s = $RefreshSig$();
 const RestaurantCategory = ({ data })=>{
+    _s();
+    const [showItems, setShowItems] = (0, _react.useState)(false);
+    const handleClick = ()=>{
+        console.log("clicked");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "w-6/12 bg-teal-50 shadow-lg p-4 mx-auto my-4 ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex justify-between",
+                    className: "flex justify-between cursor-pointer",
+                    onClick: handleClick,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             "font-bold": true,
@@ -35682,41 +35690,42 @@ const RestaurantCategory = ({ data })=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/components/RestaurantCategory.js",
-                            lineNumber: 10,
+                            lineNumber: 15,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             children: "arrow symbol"
                         }, void 0, false, {
                             fileName: "src/components/RestaurantCategory.js",
-                            lineNumber: 11,
+                            lineNumber: 16,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/RestaurantCategory.js",
-                    lineNumber: 9,
+                    lineNumber: 14,
                     columnNumber: 13
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
                     items: data.itemCards
                 }, void 0, false, {
                     fileName: "src/components/RestaurantCategory.js",
-                    lineNumber: 15,
+                    lineNumber: 20,
                     columnNumber: 14
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/RestaurantCategory.js",
-            lineNumber: 7,
+            lineNumber: 12,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/RestaurantCategory.js",
-        lineNumber: 6,
+        lineNumber: 11,
         columnNumber: 5
     }, undefined);
 };
+_s(RestaurantCategory, "nufYacSoU4bbrMzdqcBBtNUNFgY=");
 _c = RestaurantCategory;
 exports.default = RestaurantCategory;
 var _c;
