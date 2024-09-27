@@ -5,7 +5,7 @@ import ItemList from "./ItemList";
 const RestaurantCategory = ({data}) => {
   const [showItems, setShowItems] = useState(false);
   const handleClick = () => {
-    console.log("clicked")
+    setShowItems(true);
   }
   return (
     <div>
@@ -17,7 +17,7 @@ const RestaurantCategory = ({data}) => {
             </div>
 
              {/** Accordian Body */}
-             <ItemList items={data.itemCards}/>
+             { showItems && <ItemList items={data.itemCards}/> }
         </div>
     
     </div>

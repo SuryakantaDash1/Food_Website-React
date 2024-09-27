@@ -35669,7 +35669,7 @@ const RestaurantCategory = ({ data })=>{
     _s();
     const [showItems, setShowItems] = (0, _react.useState)(false);
     const handleClick = ()=>{
-        console.log("clicked");
+        setShowItems(true);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35706,12 +35706,12 @@ const RestaurantCategory = ({ data })=>{
                     lineNumber: 14,
                     columnNumber: 13
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
+                showItems && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
                     items: data.itemCards
                 }, void 0, false, {
                     fileName: "src/components/RestaurantCategory.js",
                     lineNumber: 20,
-                    columnNumber: 14
+                    columnNumber: 29
                 }, undefined)
             ]
         }, void 0, true, {
