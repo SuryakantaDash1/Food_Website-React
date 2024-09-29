@@ -35694,7 +35694,7 @@ const RestaurantCategory = ({ data })=>{
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            children: "arrow symbol"
+                            children: "arrow Symbol"
                         }, void 0, false, {
                             fileName: "src/components/RestaurantCategory.js",
                             lineNumber: 16,

@@ -13,7 +13,7 @@ const RestaurantCategory = ({data}) => {
 
             <div className="flex justify-between cursor-pointer" onClick={handleClick}>
                 <span font-bold text-lg>{data.title} ({data.itemCount })</span>
-                <span>arrow symbol</span>
+                <span>arrow Symbol</span>
             </div>
 
              {/** Accordian Body */}
