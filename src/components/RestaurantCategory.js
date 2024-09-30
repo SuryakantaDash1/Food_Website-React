@@ -16,7 +16,7 @@ const RestaurantCategory = ({data}) => {
                 <span>arrow Symbol</span>
             </div>
 
-             {/** Acordian Body */}
+             {/** Accordian Body */}
              { showItems && <ItemList items={data.itemCards}/> }
         </div>
     
