@@ -35668,9 +35668,9 @@ var _s = $RefreshSig$();
 const RestaurantCategory = ({ data })=>{
     _s();
     const [showItems, setShowItems] = (0, _react.useState)(false);
-    const handleClick = ()=>{
-        setShowItems(!showItems);
-    };
+    // const handleClick = () => {
+    //   setShowItems(!showItems);
+    // }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "w-6/12 bg-teal-50 shadow-lg p-4 mx-auto my-4 ",
@@ -35690,38 +35690,38 @@ const RestaurantCategory = ({ data })=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/components/RestaurantCategory.js",
-                            lineNumber: 15,
+                            lineNumber: 17,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             children: "arrow Symbol"
                         }, void 0, false, {
                             fileName: "src/components/RestaurantCategory.js",
-                            lineNumber: 16,
+                            lineNumber: 18,
                             columnNumber: 17
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/RestaurantCategory.js",
-                    lineNumber: 14,
+                    lineNumber: 16,
                     columnNumber: 13
                 }, undefined),
                 showItems && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
                     items: data.itemCards
                 }, void 0, false, {
                     fileName: "src/components/RestaurantCategory.js",
-                    lineNumber: 20,
+                    lineNumber: 22,
                     columnNumber: 29
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/RestaurantCategory.js",
-            lineNumber: 12,
+            lineNumber: 14,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/RestaurantCategory.js",
-        lineNumber: 11,
+        lineNumber: 13,
         columnNumber: 5
     }, undefined);
 };

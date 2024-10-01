@@ -4,9 +4,11 @@ import ItemList from "./ItemList";
 
 const RestaurantCategory = ({data}) => {
   const [showItems, setShowItems] = useState(false);
-  const handleClick = () => {
-    setShowItems(!showItems);
-  }
+
+  // const handleClick = () => {
+  //   setShowItems(!showItems);
+  // }
+  
   return (
     <div>
         <div className="w-6/12 bg-teal-50 shadow-lg p-4 mx-auto my-4 ">
