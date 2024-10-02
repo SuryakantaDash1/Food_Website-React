@@ -35546,7 +35546,7 @@ const RestaurantMenu = ()=>{
     _s();
     const { resId } = (0, _reactRouterDom.useParams)();
     const resInfo = (0, _useRestaurantMenuDefault.default)(resId);
-    const [showIndex, setShowIndex] = (0, _react.useState)(0);
+    const [showIndex, setShowIndex] = (0, _react.useState)(null);
     if (resInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/RestaurantMenu.js",
         lineNumber: 13,
@@ -35602,7 +35602,7 @@ const RestaurantMenu = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(RestaurantMenu, "N1y83l62PebFhHwBtFy8d4HxgMw=", false, function() {
+_s(RestaurantMenu, "zartQZg5gfaM+Yz/bPwFRrk9eXU=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _useRestaurantMenuDefault.default)
