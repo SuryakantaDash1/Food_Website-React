@@ -41137,8 +41137,8 @@ const Cart = ()=>{
     _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     const dispatch = (0, _reactRedux.useDispatch)();
-    const handleClearCart = (items1)=>{
-        dispatch((0, _cartSlice.clearCart)(items1));
+    const handleClearCart = ()=>{
+        dispatch((0, _cartSlice.clearCart)());
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "text-center m-4 p-4",
@@ -41155,8 +41155,8 @@ const Cart = ()=>{
                 className: "w-6/12 m-auto p-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "",
-                        onClick: ()=>handleClearCart(items),
+                        className: "p-2 m-2 text-white bg-black rounded-xl",
+                        onClick: handleClearCart,
                         children: "Clear Cart"
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
@@ -41169,6 +41169,13 @@ const Cart = ()=>{
                         fileName: "src/components/Cart.js",
                         lineNumber: 20,
                         columnNumber: 13
+                    }, undefined),
+                    cartItems.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Your Cart is empty add some items to your Cart"
+                    }, void 0, false, {
+                        fileName: "src/components/Cart.js",
+                        lineNumber: 21,
+                        columnNumber: 40
                     }, undefined)
                 ]
             }, void 0, true, {

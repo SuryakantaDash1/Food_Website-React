@@ -340,6 +340,14 @@ img, video {
   border-radius: .375rem;
 }
 
+.rounded {
+  border-radius: .25rem;
+}
+
+.rounded-xl {
+  border-radius: .75rem;
+}
+
 .border {
   border-width: 1px;
 }
