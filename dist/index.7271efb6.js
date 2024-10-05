@@ -37074,7 +37074,13 @@ module.exports = require("374a059340689e89");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _toolkit = require("@reduxjs/toolkit");
-const appStore = (0, _toolkit.configureStore)({});
+var _cartSlice = require("./cartSlice");
+var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
+const appStore = (0, _toolkit.configureStore)({
+    reducer: {
+        cart: (0, _cartSliceDefault.default)
+    }
+});
 exports.default = appStore;
 
 },{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fuua8":[function(require,module,exports) {
