@@ -9,7 +9,7 @@ import Error from './components/Error';
 import RestaurantMenu from './components/RestaurantMenu';
 import { Provider } from 'react-redux';
 import appStore from './utils/appStore'
-// import Grocery from './components/Grocery';
+
 
 
 const Grocery = lazy(() => import ("./components/Grocery"));
