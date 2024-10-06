@@ -41171,7 +41171,7 @@ const Cart = ()=>{
                         columnNumber: 13
                     }, undefined),
                     cartItems.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Your Cart is empty add some items to your Cart"
+                        children: "Your Cart is empty Please add some items In your Cart"
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
                         lineNumber: 21,
