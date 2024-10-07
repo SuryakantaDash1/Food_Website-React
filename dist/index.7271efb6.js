@@ -41135,7 +41135,8 @@ var _cartSlice = require("../utils/cartSlice");
 var _s = $RefreshSig$();
 const Cart = ()=>{
     _s();
-    const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    const store = (0, _reactRedux.useSelector)((store)=>store);
+    const cartItems = store.cart.items;
     const dispatch = (0, _reactRedux.useDispatch)();
     const handleClearCart = ()=>{
         dispatch((0, _cartSlice.clearCart)());
@@ -41148,7 +41149,7 @@ const Cart = ()=>{
                 children: "Cart"
             }, void 0, false, {
                 fileName: "src/components/Cart.js",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41160,37 +41161,37 @@ const Cart = ()=>{
                         children: "Clear Cart"
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 19,
+                        lineNumber: 21,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
                         items: cartItems
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 20,
+                        lineNumber: 22,
                         columnNumber: 13
                     }, undefined),
                     cartItems.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         children: "Your Cart is empty. Add some items In your Cart"
                     }, void 0, false, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 21,
+                        lineNumber: 23,
                         columnNumber: 40
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Cart.js",
-                lineNumber: 18,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Cart.js",
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 5
     }, undefined);
 };
-_s(Cart, "ClsVU7OzYQ50hVvtHIih2dVFL+s=", false, function() {
+_s(Cart, "TJyi8xTV/cllwIsFm0O4nJ8aGD4=", false, function() {
     return [
         (0, _reactRedux.useSelector),
         (0, _reactRedux.useDispatch)
